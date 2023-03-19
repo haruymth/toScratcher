@@ -6,7 +6,7 @@ console.log(process.env.key);
     for(let i=0;i<users.length;i++){
         (async()=>{
             
-            console.log(users[i])
+            console.log(users[i].username)
             let login = await fetch("https://scratch.mit.edu/accounts/login/",{
                     headers: {
                         "x-csrftoken": "a",
