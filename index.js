@@ -24,7 +24,7 @@ console.log(process.env.key);
                     })
             });
             //console.log(login);
-            const sid = login.headers.get("set-cookie").replace(/^scratchsessionid="/,"").replace(/";[\s\S]+/,"");
+            const sid = login.headers.get("set-cookie").replace(/^scratchsessionsid="/,"").replace(/";[\s\S]+/,"");
             console.log(sid);
         })();
     }
