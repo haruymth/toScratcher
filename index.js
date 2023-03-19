@@ -28,4 +28,4 @@ console.log(process.env.key);
             console.log(sid);
         })();
     }
-})(
+})();
