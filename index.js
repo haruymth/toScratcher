@@ -11,9 +11,10 @@ console.log(process.env.key);
                     headers: {
                         "x-csrftoken": "a",
                         "x-requested-with": "XMLHttpRequest",
-                        "Cookie": "scratchcsrftoken=a;scratchlanguage=en;",
+                        "Cookie": "scratchcsrftoken=a;",
                         "referer": "https://scratch.mit.edu",
-                        "content-type": "application/json"
+                        "content-type": "application/json",
+                        "user-agent": "",
                     },
                     method: "POST",
                     body:JSON.stringify({
